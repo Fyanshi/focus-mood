@@ -1,0 +1,66 @@
+{
+  "id": "2060101",
+  "name": "focus-mood",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "关注情绪webapp
+",
+  "glyphs": [
+    {
+      "icon_id": "12841028",
+      "name": "家",
+      "font_class": "jia",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "14153397",
+      "name": "图表",
+      "font_class": "tubiao",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "15419576",
+      "name": "流水列表",
+      "font_class": "liebiao-xiangqingxbiaogetianchong",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "4129816",
+      "name": "开心",
+      "font_class": "kaixin",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "5488087",
+      "name": "平常脸",
+      "font_class": "pingchanglian",
+      "unicode": "e6e2",
+      "unicode_decimal": 59106
+    },
+    {
+      "icon_id": "8223646",
+      "name": "惊讶",
+      "font_class": "nv",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "8351846",
+      "name": "伤心",
+      "font_class": "shangxin",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "15636691",
+      "name": "愤怒",
+      "font_class": "fennu",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    }
+  ]
+}

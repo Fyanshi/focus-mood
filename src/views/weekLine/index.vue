@@ -3,10 +3,10 @@
  * @Author: jinhua
  * @Date: 2020-09-12 10:09:49
  * @LastEditors: jinhua
- * @LastEditTime: 2020-09-12 22:25:59
+ * @LastEditTime: 2020-09-12 22:54:46
 -->
 <template>
-<div class="mood-list">
+<div class="week-line">
   <div class="container">
     <div class="header-items-group">
       <a class="header-items">
@@ -17,7 +17,7 @@
     </div>
     <div class="content-wrap">
       <div class="calendar-wrap">
-        <van-calendar title="日历" :poppable="false" :show-confirm="false" :style="{ height: '100%' }" :min-date="minDate" :max-date="maxDate" />
+        <ve-line :data="chartData"></ve-line>
       </div>
       <ul class="mood-group">
         <li class="mood-item">
@@ -76,13 +76,53 @@
 
 <script>
 export default {
-  name: 'mood-list',
+  name: 'week-line',
   data() {
     return {
-      value: 50,
-      minDate: new Date(1971, 0, 1),
-      maxDate: new Date(2100, 0, 31),
+      chartData: {
+        columns: ['日期', '访问用户', '下单用户', '下单率'],
+        rows: [{
+            '日期': '1/1',
+            '访问用户': 1393,
+            '下单用户': 1093,
+            '下单率': 0.32
+          },
+          {
+            '日期': '1/2',
+            '访问用户': 3530,
+            '下单用户': 3230,
+            '下单率': 0.26
+          },
+          {
+            '日期': '1/3',
+            '访问用户': 2923,
+            '下单用户': 2623,
+            '下单率': 0.76
+          },
+          {
+            '日期': '1/4',
+            '访问用户': 1723,
+            '下单用户': 1423,
+            '下单率': 0.49
+          },
+          {
+            '日期': '1/5',
+            '访问用户': 3792,
+            '下单用户': 3492,
+            '下单率': 0.323
+          },
+          {
+            '日期': '1/6',
+            '访问用户': 4593,
+            '下单用户': 4293,
+            '下单率': 0.78
+          }
+        ]
+      }
     }
+  },
+  components: {
+
   },
   methods: {
     onChange(value) {
@@ -97,7 +137,7 @@ export default {
 
 // @import '@/assets/base.less';
 
-.mood-list {
+.week-line {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -140,7 +180,7 @@ export default {
 
       .calendar-wrap {
         width: 100%;
-        height: 40%;
+        height: 50%;
         flex: 1;
         border-radius: 1rem;
         background-color: #fff;
@@ -149,7 +189,7 @@ export default {
 
       .mood-group {
         width: 100%;
-        height: 55%;
+        height: 45%;
         border-radius: 1rem;
         overflow: scroll;
 

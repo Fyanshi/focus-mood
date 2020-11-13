@@ -3,7 +3,7 @@
  * @Author: jinhua
  * @Date: 2020-09-10 21:50:45
  * @LastEditors: jinhua
- * @LastEditTime: 2020-09-12 10:11:23
+ * @LastEditTime: 2020-09-12 22:47:03
  */
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -32,6 +32,18 @@ const routes = [{
         name: 'list',
         component: () =>
             import ('@/views/list'),
+    },
+    {
+        path: '/dayLine',
+        name: 'dayLine',
+        component: () =>
+            import ('@/views/dayLine'),
+    },
+    {
+        path: '/weekLine',
+        name: 'weekLine',
+        component: () =>
+            import ('@/views/weekLine'),
     },
 ];
 

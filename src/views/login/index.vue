@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import {login} from '@/api/login.js';
 export default {
   name: 'login',
   data() {
@@ -61,6 +62,12 @@ export default {
   methods: {
     onSubmit(values) {
       console.log('submit', values);
+      console.log(this.$axios);
+      login({}).then((result) => {
+        console.log(result);
+      }).catch((err) => {
+        console.log(err);
+      });
     },
     register(){
       this.hasRegister = !this.hasRegister;

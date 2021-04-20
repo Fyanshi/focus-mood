@@ -6,41 +6,42 @@
  * @LastEditTime: 2020-09-12 10:05:40
 -->
 <template>
-<div class="home">
-  <div class="container">
-    <div class="header-items-group">
-      <a class="header-items">
-        <!-- TODO 心情卡片列表 -->
-        <span class="iconfont iconliebiao-xiangqingxbiaogetianchong"> </span>
-      </a>
-      <a class="header-items"><span class="iconfont icontubiao"> </span></a>
-    </div>
-    <div class="content-wrap">
-      <div class="title">感觉如何？</div>
-      <div class="calendar">
-        <a><span class="iconfont iconjia"></span>
-          <span>2020-09-10 22:39</span>
+  <div class="home">
+    <div class="container">
+      <div class="header-items-group">
+        <a class="header-items">
+          <!-- TODO 心情卡片列表 -->
+          <span class="iconfont iconliebiao-xiangqingxbiaogetianchong"></span>
         </a>
+        <a class="header-items"><span class="iconfont icontubiao"></span></a>
       </div>
-      <div class="mood-wrap">
-        <span class="iconfont iconkaixin"></span>
-      </div>
-      <div class="title">开心</div>
-      <div class="slider-wrap">
-        <van-slider v-model="value" bar-height="10px" active-color="#74a4f5">
-          <template #button>
-            <div class="custom-button">
-              <span class="iconfont icontubiao"></span>
-            </div>
-          </template>
-        </van-slider>
-      </div>
-      <div class="options-group">
-        <div class="options-item">继续</div>
+      <div class="content-wrap">
+        <div class="title">感觉如何？</div>
+        <div class="calendar">
+          <a>
+            <span class="iconfont iconjia"></span>
+            <span>2020-09-10 22:39</span>
+          </a>
+        </div>
+        <div class="mood-wrap">
+          <span class="iconfont iconkaixin"></span>
+        </div>
+        <div class="title">开心</div>
+        <div class="slider-wrap">
+          <van-slider v-model="value" bar-height="10px" active-color="#74a4f5">
+            <template #button>
+              <div class="custom-button">
+                <span class="iconfont icontubiao"></span>
+              </div>
+            </template>
+          </van-slider>
+        </div>
+        <div class="options-group">
+          <div class="options-item">继续</div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -49,14 +50,14 @@ export default {
   data() {
     return {
       value: 50,
-    }
+    };
   },
   methods: {
     onChange(value) {
-      // Toast('当前值：' + value);
+      console.log(value);
     },
   },
-}
+};
 </script>
 
 <style lang="less" scoped>
@@ -113,7 +114,6 @@ export default {
         margin: 0 auto;
         display: flex;
         justify-content: center;
-
       }
 
       .mood-wrap {
@@ -121,7 +121,7 @@ export default {
         justify-content: center;
         padding: 3rem 0;
 
-        .iconfont{
+        .iconfont {
           font-size: 8rem;
         }
       }
@@ -150,12 +150,9 @@ export default {
           color: #fff;
           text-align: center;
           margin: 1rem;
-
         }
       }
-
     }
   }
-
 }
 </style>

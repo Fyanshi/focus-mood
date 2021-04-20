@@ -1,23 +1,23 @@
 <template>
-<div class="mood-list">
-  <div class="container">
-    <div class="header-items-group">
-      <a class="header-items">
-        <!-- TODO 心情卡片列表 -->
-        <span class="iconfont iconliebiao-xiangqingxbiaogetianchong"> </span>
-      </a>
-      <a class="header-items"><span class="iconfont icontubiao"> </span></a>
-    </div>
-    <div class="content-wrap">
-      <ul class="mood-group">
-        <li class="mood-item">
-          <span class="iconfont icontubiao"></span>
-          <span>2020-09-12 10:16</span>
-        </li>
-      </ul>
+  <div class="mood-list">
+    <div class="container">
+      <div class="header-items-group">
+        <a class="header-items">
+          <!-- TODO 心情卡片列表 -->
+          <span class="iconfont iconliebiao-xiangqingxbiaogetianchong"></span>
+        </a>
+        <a class="header-items"><span class="iconfont icontubiao"></span></a>
+      </div>
+      <div class="content-wrap">
+        <ul class="mood-group">
+          <li class="mood-item">
+            <span class="iconfont icontubiao"></span>
+            <span>2020-09-12 10:16</span>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -26,14 +26,14 @@ export default {
   data() {
     return {
       value: 50,
-    }
+    };
   },
   methods: {
     onChange(value) {
-      // Toast('当前值：' + value);
+      console.log(`当前值：${value}`);
     },
   },
-}
+};
 </script>
 
 <style lang="less" scoped>
@@ -87,6 +87,5 @@ export default {
       }
     }
   }
-
 }
 </style>

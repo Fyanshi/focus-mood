@@ -64,5 +64,9 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Fyanshi/focus-mood.git",
+  "author": "huangying <huangying@1488796775932539>",
+  "license": "MIT"
 }
